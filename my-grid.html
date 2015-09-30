@@ -1,0 +1,228 @@
+<span>Click on column header to apply sorting, click again to reverse order</span>
+<div id="listViewGrid" class=" x-panel  x-grid-with-col-lines x-grid-panel" style="width: 100%">
+    <div class="x-panel-bwrap" id="">
+<!-- START OF TOP BAR =============================================================================== -->
+<!-- These are not in use, just here for reference should functionality be included to add the toolbar to the table. -->
+        <div class="x-panel-tbar x-panel-tbar-noheader" id="" style="width: 100%">
+            <div id="" class="x-toolbar x-small-editor x-toolbar-layout-ct" style="width: 100%">
+                <table cellspacing="0" class="x-toolbar-ct">
+                    <tbody>
+                        <tr>
+                            <td class="x-toolbar-left" align="left">
+                                <table cellspacing="0">
+                                    <tbody>
+                                        <tr class="x-toolbar-left-row">
+                                            <td class="x-toolbar-cell" id="">
+                                                <table cellspacing="0" class="x-btn  x-btn-text-icon" id="" style="width: auto;">
+                                                    <tbody class="x-btn-small x-btn-icon-small-left">
+                                                        <tr>
+                                                            <td class="x-btn-tl"><i>&nbsp;</i></td>
+                                                            <td class="x-btn-tc"></td>
+                                                            <td class="x-btn-tr"><i>&nbsp;</i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="x-btn-ml"><i>&nbsp;</i></td>
+                                                            <td class="x-btn-mc"><em class="" unselectable="on"><button class="x-btn-text update" type="button" id="">Refresh data</button></em></td>
+                                                            <td class="x-btn-mr"><i>&nbsp;</i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="x-btn-bl"><i>&nbsp;</i></td>
+                                                            <td class="x-btn-bc"></td>
+                                                            <td class="x-btn-br"><i>&nbsp;</i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td class="x-toolbar-cell " id="ext-gen163">
+                                                <table cellspacing="0" class="x-btn refresh_warn x-btn-text-icon" id="refreshDataWarnButton" style="width: auto;">
+                                                    <tbody class="x-btn-small x-btn-icon-small-left">
+                                                        <tr>
+                                                            <td class="x-btn-tl"><i>&nbsp;</i></td>
+                                                            <td class="x-btn-tc"></td>
+                                                            <td class="x-btn-tr"><i>&nbsp;</i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="x-btn-ml"><i>&nbsp;</i></td>
+                                                            <td class="x-btn-mc"><em class="" unselectable="on"><button class="x-btn-text left_arrow" type="button" id="">The event data on this page is older than 15 minutes!  Click button to refresh.</button></em></td>
+                                                            <td class="x-btn-mr"><i>&nbsp;</i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="x-btn-bl"><i>&nbsp;</i></td>
+                                                            <td class="x-btn-bc"></td>
+                                                            <td class="x-btn-br"><i>&nbsp;</i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="x-toolbar-right" align="right">
+                                <table cellspacing="0" class="x-toolbar-right-ct">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0">
+                                                    <tbody>
+                                                        <tr class="x-toolbar-right-row">
+                                                            <td class="x-toolbar-cell" id="">
+                                                                <table cellspacing="0" class="x-btn  x-btn-text-icon" id="" style="width: auto;">
+                                                                    <tbody class="x-btn-small x-btn-icon-small-left">
+                                                                        <tr>
+                                                                            <td class="x-btn-tl"><i>&nbsp;</i></td>
+                                                                            <td class="x-btn-tc"></td>
+                                                                            <td class="x-btn-tr"><i>&nbsp;</i></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="x-btn-ml"><i>&nbsp;</i></td>
+                                                                            <td class="x-btn-mc"><em class="" unselectable="on"><button class="x-btn-text print" type="button" id="">Print</button></em></td>
+                                                                            <td class="x-btn-mr"><i>&nbsp;</i></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="x-btn-bl"><i>&nbsp;</i></td>
+                                                                            <td class="x-btn-bc"></td>
+                                                                            <td class="x-btn-br"><i>&nbsp;</i></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table cellspacing="0">
+                                                    <tbody>
+                                                        <tr class="x-toolbar-extras-row"></tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+<!-- END OF TOP BAR =============================================================================== -->
+<!-- START OF BODY AREA =============================================================================== -->        
+        <div class="x-panel-body x-panel-body-noheader" id="" style="height: auto; width: 100%;">
+            <div class="x-grid3" hidefocus="true" id="">
+                <div class="x-grid3-viewport" id="">
+                    <!-- START OF HEADER ============================================================= -->
+                    <div class="x-grid3-header" id="">
+                        <div class="x-grid3-header-inner" id="">
+                            <div class="x-grid3-header-offset" style="width: 100%;">
+                            <!-- START OF HEADER CONTENT ======================================================== -->
+                                <table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+                                    <thead>
+                                        <tr class="x-grid3-hd-row">
+                                            <td ng-repeat="col in gridOptions.columnDefs" id="x-grid-td-{{ $index }}" class="x-grid3-hd x-grid3-cell x-grid3-td-{{ $index }}" ng-class="{'x-grid3-cell-first': $index == 0, 'x-grid3-cell-last':$index == (gridOptions.columnDefs.length - 1), 'sort-asc': (curSortCol == col.field && isDescendingSort == false), 'sort-desc': (curSortCol == col.field && isDescendingSort == true)}" style="width:{{ col.width }};"  ng-hide="col.isHidden">
+                                                <div ng-click="setSortBy(col.field)" class="x-grid3-hd-inner x-grid3-hd-{{ $index }}" unselectable="on" style="">
+                                                    <a class="x-grid3-hd-btn" href="#" id=""></a>
+                                                    {{ col.label }}
+                                                    <img class="x-grid3-sort-icon" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            <!-- END OF HEADER CONTENT ======================================================== -->
+                            </div>
+                        </div>
+                        <div class="x-clear"></div>
+                    </div>
+                    <!-- END OF HEADER ============================================================= -->
+                    <!-- START OF ROWS ============================================================= -->
+                    <div class="x-grid3-scroller" id="" style="overflow: visible; position: static;">
+                        <div class="x-grid3-body" style="width: 100%;" id="">
+                        	<!-- START OF ROW ============================================================= -->
+                            <div ng-repeat="row in gridOptions.rowData | gridFilter: gridOptions.filterService | orderBy: sortCol" class="x-grid3-row severity-major" ng-class="{'x-grid3-row-first':$index==0, 'x-grid3-row-last':($index == (gridOptions.rowData.length - 1))}" style="width:100%;"> 
+                                <table class="x-grid3-row-table" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td ng-repeat="col in gridOptions.columnDefs" class="x-grid3-col x-grid3-cell x-grid3-td-{{$index}}" ng-class="{'x-grid3-cell-first': $index == 0, 'x-grid3-cell-last': $index == (gridOptions.columnDefs.length - 1)}" style="width:{{ col.width }};"  ng-hide="col.isHidden" tabindex="0">
+                                                
+                                                <!-- not multiline and no cell renderer -->
+                                                <div ng-if="!col.isMultiline && !col.cellRenderer" class="x-grid3-cell-inner x-grid3-col-{{ $index }}" unselectable="on">{{ row[col.field] }}</div>
+                                                
+                                                <!-- not multiline and has cell renderer -->
+                                                <div ng-if="!col.isMultiline && col.cellRenderer" class="x-grid3-cell-inner x-grid3-col-{{ $index }}" unselectable="on" ng-bind-html="col.cellRenderer(row)"></div>
+
+                                                <!-- multiline and no cell renderer -->
+                                                <div ng-if="col.isMultiline" class="x-grid3-cell-inner x-grid3-col-{{ $index }}" unselectable="on">
+                                                    <div style="white-space:normal !important;">{{ row[col.field] }}</div>
+                                                </div>
+
+                                                <!-- multiline and has cell renderer -->
+                                                <div ng-if="col.isMultiline" class="x-grid3-cell-inner x-grid3-col-{{ $index }}" unselectable="on" ng-bind-html="col.cellRenderer(row)">
+                                                    <div style="white-space:normal !important;"></div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        	<!-- END OF ROW ============================================================= -->
+                        </div>
+                        <a href="#" class="x-grid3-focus" tabindex="-1" id="" style="left: 1px; top: 22px;"></a>
+                    </div>
+                    <!-- END OF ROWS ============================================================= -->                    
+                </div>
+                <div class="x-grid3-resize-marker" id="">&nbsp;</div>
+                <div class="x-grid3-resize-proxy" id="">&nbsp;</div>
+            </div>
+        </div>
+<!-- END OF BODY AREA =============================================================================== -->
+<!-- START OF BOTTOM BAR =============================================================================== -->
+<!-- This is not visible and left here in case the functionality to include the footer bar to the table is done in the future. -->
+        <div class="x-panel-bbar" id="" style="width: 100%;">
+            <div id="" class="x-toolbar x-small-editor x-toolbar-layout-ct" style="height: 15px; width: 100%;">
+                <table cellspacing="0" class="x-toolbar-ct">
+                    <tbody>
+                        <tr>
+                            <td class="x-toolbar-left" align="left">
+                                <table cellspacing="0">
+                                    <tbody>
+                                        <tr class="x-toolbar-left-row">
+                                            <td class="x-toolbar-cell" id="">
+                                                <label id="">{{ gridOptions.rowData.length }} items</label>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                            <td class="x-toolbar-right" align="right">
+                                <table cellspacing="0" class="x-toolbar-right-ct">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <table cellspacing="0">
+                                                    <tbody>
+                                                        <tr class="x-toolbar-right-row"></tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table cellspacing="0">
+                                                    <tbody>
+                                                        <tr class="x-toolbar-extras-row"></tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+<!-- END O BOTTOM BAR =============================================================================== -->
+    </div>
+</div>

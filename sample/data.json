@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Forest Fire",
+        "latitude": 49.220211,
+        "longitude": -199.935286,
+        "district": "Okanagan Shuswap",
+        "road": "Highway 3",
+        "direction": "Both directions",
+        "eventType": "Incident",
+        "severity": "Major",
+        "lastUpdated": "2015-08-08 13:40:12.0",
+        "description": "Forest fire 8 km west of Kermeos. blah blah Blah blah blah blah blah blah Blah blah blah blah blah Blah blah blah blah blah blah blah blah",
+        "ateid": 192156,
+        "trafficPatter": "Single Lane Alternating Traffic",
+        "popularRoute": "Crowsnest (#3) - Hope to Osyoos"
+    },
+    {
+        "title": "House Fire",
+        "latitude": 49.220211,
+        "longitude": -199.935286,
+        "district": "Lower Mainland",
+        "road": "Highway 1",
+        "direction": "Both directions",
+        "eventType": "Incident",
+        "severity": "Major",
+        "lastUpdated": "2015-08-08 12:10:14.0",
+        "description": "blah blah blah blah blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah Blah blah blah blah blah blah Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah blah",
+        "ateid": 192154,
+        "trafficPatter": "Blocked in both directions",
+        "popularRoute": "Crowsnest (#3) - Hope to Osyoos"
+    }
+]

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample My0Grid</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular-sanitize.js"></script>
+	<script type="text/javascript" src="my-grid.js"></script>
+	<link rel="stylesheet" href="my-grid.css"></link>
+</head>
+<body ng-app="my-grid">
+	<div class="content">
+		<h1>SAMPLE DATA GRID</h1>
+		<p><strong>AngularJS directive module to create a table with icons and multi-line cells</strong></p>
+		<div ng-controller="GridCtrl" class="panel">
+			<div my-grid grid-options="gridOptions"></div>
+		</div>		
+	</div>
+</body>
+</html>

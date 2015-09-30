@@ -1,0 +1,75 @@
+<span>{{ sortColumnMessage }}</span>
+<div id="listViewGrid" class=" x-panel  x-grid-with-col-lines x-grid-panel" style="width: 100%">
+    <div class="x-panel-bwrap" id="">
+
+        <div class="x-panel-body x-panel-body-noheader" id="" style="height: auto; width: 100%;">
+            <div class="x-grid3" hidefocus="true" id="">
+                <div class="x-grid3-viewport" id="">
+                    <!-- START OF HEADER ============================================================= -->
+                    <div class="x-grid3-header" id="">
+                        <div class="x-grid3-header-inner" id="">
+                            <div class="x-grid3-header-offset" style="width: 100%;">
+                            <!-- START OF HEADER CONTENT ======================================================== -->
+                                <table border="0" cellspacing="0" cellpadding="0" style="width: 100%;">
+                                    <thead>
+                                        <tr class="x-grid3-hd-row">
+                                            <td ng-repeat="col in gridOptions.columnDefs" id="x-grid-td-{{ $index }}" class="x-grid3-hd x-grid3-cell x-grid3-td-{{ $index }}" ng-class="{'x-grid3-cell-first': $index == 0, 'x-grid3-cell-last':$index == (gridOptions.columnDefs.length - 1), 'sort-asc': (curSortCol == col.field && isDescendingSort == false), 'sort-desc': (curSortCol == col.field && isDescendingSort == true)}" style="width:{{ col.width }};"  ng-hide="col.isHidden">
+                                                <div ng-click="setSortBy(col.field)" class="x-grid3-hd-inner x-grid3-hd-{{ $index }}" unselectable="on" style="">
+                                                    <a class="x-grid3-hd-btn" href="#" id=""></a>
+                                                    {{ col.label }}
+                                                    <img class="x-grid3-sort-icon" src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            <!-- END OF HEADER CONTENT ======================================================== -->
+                            </div>
+                        </div>
+                        <div class="x-clear"></div>
+                    </div>
+                    <!-- END OF HEADER ============================================================= -->
+                    <!-- START OF ROWS ============================================================= -->
+                    <div class="x-grid3-scroller" id="" style="overflow: visible; position: static;">
+                        <div class="x-grid3-body" style="width: 100%;" id="">
+                        	<!-- START OF ROW ============================================================= -->
+                            <div ng-repeat="row in gridOptions.rowData | gridFilter: gridOptions.filterService | orderBy: sortCol" class="x-grid3-row severity-major" ng-class="{'x-grid3-row-first':$index==0, 'x-grid3-row-last':($index == (gridOptions.rowData.length - 1))}" style="width:100%;"> 
+                                <table class="x-grid3-row-table" border="0" cellspacing="0" cellpadding="0" style="width:100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td ng-repeat="col in gridOptions.columnDefs" class="x-grid3-col x-grid3-cell x-grid3-td-{{$index}}" ng-class="{'x-grid3-cell-first': $index == 0, 'x-grid3-cell-last': $index == (gridOptions.columnDefs.length - 1)}" style="width:{{ col.width }};"  ng-hide="col.isHidden" tabindex="0">
+                                                
+                                                <!-- not multiline and no cell renderer -->
+                                                <div ng-if="!col.isMultiline && !col.cellRenderer" class="x-grid3-cell-inner x-grid3-col-{{ $index }}" unselectable="on">{{ row[col.field] }}</div>
+                                                
+                                                <!-- not multiline and has cell renderer -->
+                                                <div ng-if="!col.isMultiline && col.cellRenderer" class="x-grid3-cell-inner x-grid3-col-{{ $index }}" unselectable="on" ng-bind-html="col.cellRenderer(row)"></div>
+
+                                                <!-- multiline and no cell renderer -->
+                                                <div ng-if="col.isMultiline" class="x-grid3-cell-inner x-grid3-col-{{ $index }}" unselectable="on">
+                                                    <div style="white-space:normal !important;">{{ row[col.field] }}</div>
+                                                </div>
+
+                                                <!-- multiline and has cell renderer -->
+                                                <div ng-if="col.isMultiline" class="x-grid3-cell-inner x-grid3-col-{{ $index }}" unselectable="on" ng-bind-html="col.cellRenderer(row)">
+                                                    <div style="white-space:normal !important;"></div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        	<!-- END OF ROW ============================================================= -->
+                        </div>
+                        <a href="#" class="x-grid3-focus" tabindex="-1" id="" style="left: 1px; top: 22px;"></a>
+                    </div>
+                    <!-- END OF ROWS ============================================================= -->                    
+                </div>
+                <div class="x-grid3-resize-marker" id="">&nbsp;</div>
+                <div class="x-grid3-resize-proxy" id="">&nbsp;</div>
+            </div>
+        </div>
+
+    </div>
+</div>
