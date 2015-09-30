@@ -32,7 +32,7 @@ The table columns are configured via the 'columnDefs' array of objects.  Each ob
 ####Example:
 This example has 6 columns, 5 of which are visible.  The first column displays a custom cell content and the 4th column contains multi-line data.
 
-'''
+```
 var columnDefs = [
     { label: "Type",         field: "eventType",   width: "7%",  isMultiline: false, sort: true, cellRenderer: function(data){return buildCellHtml('eventType', data);} },
     { label: "Severity",     field: "severity",    width: "7%",  isMultiline: false, sort: true },
@@ -41,7 +41,7 @@ var columnDefs = [
     { label: "Last Updated", field: "lastUpdated", width: "15%", isMultiline: false, sort: true },
     { label: "District",     field: "district",    width: "0%",  isHidden: true}
 ];
-'''
+```
 
 ### Cell Renderer Function
 When the cell must be rendered using custom html for its content (i.e. image), the 'cellRenderer' property is defined in the columnDefs configuration.
@@ -85,7 +85,7 @@ This example has one member which matches the json 'eventType' property.  It pro
 A 'image' property is provided to be inserted into the html string for 'matchHtml'.
 No default html is provided (used when no matches found) so the json data value will be output by default.
 
-'''	
+```
 var cellRendererProps = [						// Array of objects
 	{
     	field: "eventType",						// Column field name
@@ -105,7 +105,7 @@ var cellRendererProps = [						// Array of objects
     	]
     }
 ];
-'''
+```
 
 ## Build
 
