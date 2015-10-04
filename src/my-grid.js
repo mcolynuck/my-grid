@@ -137,7 +137,7 @@
 		    }).
 		    error(function(msg){
 		      throw "Error loading data. " + msg;
-		      defer.resolve({});
+		      defer.reject();
 		    });
 		    return defer.promise;				
 		}

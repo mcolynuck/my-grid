@@ -7,6 +7,14 @@ A main feature of this grid is the ability to display multi-line text in one or 
 
 A sample is provided in the 'sample' folder which contains the html, css and js files required for it to display.  A server is required for Angular operations.
 
+## Instructions for use
+1 Add my-grid.js to your project.
+2 Configure my-grid options
+  1 Set 'jsonUrl' with location of JSON data.
+  2 Configure columDefs with layout of columns
+  3 Optionally configure cellRendererOpts if cellRenderer used in columnDefs.
+3 Add my-grid attribute directive in HTML element.
+
 ## Grid Configuration
 The following elements pre-configure the table content which is built at runtime with live data.
 
@@ -29,7 +37,7 @@ The table columns are configured via the 'columnDefs' array of objects.  Each ob
 - 'isHidden' (optional)
   - Boolean value indicating that this column is not visible, but can be used in filtering of rows via Angular filter.
 
-####Example:
+####columDefs Example:
 This example has 6 columns, 5 of which are visible.  The first column displays a custom cell content and the 4th column contains multi-line data.
 
 ```
@@ -79,7 +87,7 @@ The fields of a renderer object are as follows:
           - Other properties are only used to replace placeholders in 'matchHtml' with the same name, surrounded by '@' characters.
 
 
-####Example:
+####cellRendererProps Example:
 
 This example has one member which matches the json 'eventType' property.  It provides 3 possible values to match against specifically using the 'value' property.
 A 'image' property is provided to be inserted into the html string for 'matchHtml'.
